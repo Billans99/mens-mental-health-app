@@ -25,7 +25,7 @@ const Header = () => {
                 <Navbar.Brand href="#home" className="nav-heading">
                     <img
                         alt=""
-                        src="/img/logo.svg"
+                        src="/Mens-mental-health-app-logo.png"
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
