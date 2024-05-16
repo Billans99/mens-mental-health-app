@@ -1,6 +1,5 @@
 // TO DO: 
-// App-heading, app logo, navbar
-// Create basic routing for app through react-router-dom
+// Change app heading font using material UI, add react routing for navbar
 
 
 // imports
@@ -34,12 +33,12 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#statistics">Statistics</Nav.Link>
-                        <Nav.Link href="#members">Members</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav className="nav-links-container">
+                        <Nav.Link href="#home" className="nav-links">Home</Nav.Link>
+                        <Nav.Link href="#statistics" className="nav-links">Statistics</Nav.Link>
+                        <Nav.Link href="#members" className="nav-links">Members</Nav.Link>
+                        <Nav.Link href="#about" className="nav-links">About</Nav.Link>
+                        <Nav.Link href="#contact" className="nav-links">Contact</Nav.Link>
                         <NavDropdown title="Support" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">
                             Mental health support links</NavDropdown.Item>
