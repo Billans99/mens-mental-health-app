@@ -1,3 +1,8 @@
+// TO DO: 
+// Browse Material UI components
+// Work on Home component
+// Add more statistics to database
+
 // imports
 import NavBar from './NavBar.jsx'
 import React, { useEffect, useState } from 'react'

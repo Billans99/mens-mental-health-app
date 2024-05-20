@@ -1,5 +1,3 @@
-// TO DO: 
-// react routing for navbar
 
 
 // imports

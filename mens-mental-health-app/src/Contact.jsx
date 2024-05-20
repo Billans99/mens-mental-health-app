@@ -8,7 +8,7 @@ const Contact = () => {
 
     return(<>
         <NavBar />
-        <h1>Hello World!</h1>
+        <h1>Hello Contact!</h1>
         
         </>
         
