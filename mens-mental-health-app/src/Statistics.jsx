@@ -10,34 +10,67 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import Button from '@mui/material/Button'
-import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Fade from '@mui/material/Fade';
+import Backdrop from '@mui/material/Backdrop'
+import Box from '@mui/material/Box'
+import Modal from '@mui/material/Modal'
+import Fade from '@mui/material/Fade'
 
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  }
 
+  const style2 = {
+    textAlign: 'center',
+  }
 
 // Statistics component
 const Statistics = () => {
+
+// State used to store API data and map to Material UI cards
+const [statisticsData, setStatisticsData] = useState([])
+// State to open and close modal
+const [open, setOpen] = useState(false)
+const [selectedStatistic, setSelectedStatistic] = useState([])
+const [loading, setLoading] = useState(false)
+
+
 
     useEffect(() => {
         getStatisticsData()
     }, [])
 
-// Handle card click when statistic card is clicked -> a modal will pop up
-const handleCardClick = () => {
-    
+
+
+// Handles card click, opens modal and sets the selected statistic to the statistic data object that was clicked
+const handleOpenModal = (statistic) => {
+    setSelectedStatistic(statistic)
+    setOpen(true)
 }
 
-// States used to store API data and map to Material UI cards
-const [statisticsData, setStatisticsData] = useState([])
+// Function to close modal, sets selected statistic to an empty object and closes modal
+const handleCloseModal = () => {
+    setSelectedStatistic({})
+    setOpen(false)
+}
+
+
     // Function to fetch statistics data from API endpoint using axios, log the response and set the data to statisticsData state
     // If there's an error, log the error
     const getStatisticsData = async () => {
         try {
+            setLoading(true)
             const statisticsResponse = await axios.get('http://localhost:3000/statistics')
             console.log(statisticsResponse)
             setStatisticsData(statisticsResponse.data.statistics)
+            setLoading(false)
         } catch (err) {
             console.error(err)
         } finally {
@@ -58,8 +91,10 @@ const [statisticsData, setStatisticsData] = useState([])
         <div className="card-container">
             {statisticsData.map((statistic) => {
                 return (
+                    <>
                     <Card sx={{ maxWidth: 345 }}>
-                        <CardActionArea onClick={handleCardClick}>
+                        {/* On click of the card action area, open modal */}
+                        <CardActionArea onClick={() => handleOpenModal(statistic)}>
                             <CardMedia
                                 component="img"
                                 height="140"
@@ -79,11 +114,45 @@ const [statisticsData, setStatisticsData] = useState([])
                             </CardContent>
                         </CardActionArea>
                     </Card>
+
+                    {/* Modal that displays after a card is clicked */}
+                    <Modal
+                        aria-labelledby="transition-modal-title"
+                        aria-describedby="transition-modal-description"
+                        open={open}
+                        onClose={handleCloseModal}
+                        closeAfterTransition
+                        slots={{ backdrop: Backdrop }}
+                        slotProps={{
+                        backdrop: {
+                            timeout: 500,
+                            },
+                        }}
+                        >
+                        <Fade in={open}>
+                            <Box sx={style}>
+                                <Typography sx={style2} id="transition-modal-title" variant="h6" component="h2">
+                                    {selectedStatistic.title}
+                                </Typography>
+                                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                                    {selectedStatistic.content}
+                                </Typography>
+                                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                                    Date: {selectedStatistic.date}
+                                </Typography>
+                                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                                    Type: {selectedStatistic.type}
+                                </Typography>
+                                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                                    Comparison: {selectedStatistic.comparison}
+                                </Typography>
+                            </Box>
+                        </Fade>
+                    </Modal>
+                </>                        
                 )
             })}
         </div>
-        
-        
        
         </>
        
