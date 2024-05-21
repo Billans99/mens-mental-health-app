@@ -1,3 +1,5 @@
+// Imports for Home component
+// Some imports are from Material UI
 import NavBar from './NavBar.jsx'
 import * as React from 'react'
 import { styled } from '@mui/material/styles'
@@ -14,20 +16,20 @@ const Item = styled(Paper)(({ theme }) => ({
     boxShadow: "none",
   }));
 
-
+// Home component
 const Home = () => {
-
-
 
 
     return(
         <>
         <NavBar />
+        {/* Welcome message for home component */}
         <div className="welcome-message-container">
             <h1 className="welcome-message">Welcome to the Men's Mental Health App</h1>
         </div>
 
-
+    {/* Summary of home page, using a grid describing the value this app can deliver.
+        Each row includes, an img, heading, and paragraph body */}
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={5}
             direction="row"
@@ -35,9 +37,10 @@ const Home = () => {
             alignItems="center"
             paddingTop="40px"
         >
+        {/* First row of grid */}
         <Grid item xs={4}>
           <Item>
-            <img className="home-summary-img1" src="/home-summary-img1.png" alt="A pair of hands holding a paper cutout of a man's mind"></img>
+            <img className="home-summary-img1" src="/home-summary-img1.png"></img>
           </Item>
         </Grid>
         <Grid item xs={4}>
@@ -52,6 +55,7 @@ const Home = () => {
           </Item>
         </Grid>
 
+        {/* Second row of grid */}
         <Grid item xs={4}>
           <Item>
             <img className="home-summary-img2" src="/home-summary-img2.png"></img>
@@ -71,6 +75,7 @@ const Home = () => {
           </Item>
         </Grid>
 
+        {/* Third row of grid */}
         <Grid item xs={4}>
           <Item>
             <img className="home-summary-img3" src="/home-summary-img3.png"></img>
@@ -84,7 +89,8 @@ const Home = () => {
         <Grid item xs={4}>
           <Item>
             <h6 className="home-summary-body">
-                Friends and family can be our largest supporters in our recovery of mental health. Make sure to reach out to the pople that care the most.
+                Friends and family can be our largest supporters in our recovery of mental health. Make sure to reach out to the pople that care 
+                the most.
             </h6>
           </Item>
         </Grid>
