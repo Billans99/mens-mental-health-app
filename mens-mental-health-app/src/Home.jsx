@@ -1,12 +1,13 @@
 // Imports for Home component
-// Some imports are from Material UI
 import NavBar from './NavBar.jsx'
 import * as React from 'react'
+// Imports for MUI components
 import { styled } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 
+// Styled components
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -23,12 +24,13 @@ const Home = () => {
     return(
         <>
         <NavBar />
-        {/* Welcome message for home component */}
+        {/* Welcome message for home component 
+        This home page is mobile and web responsive */}
         <div className="welcome-message-container">
             <h1 className="welcome-message">Welcome to the Men's Mental Health App</h1>
         </div>
 
-    {/* Summary of home page, using a grid describing the value this app can deliver.
+    {/* Home page summary, using a grid describing the value this app can deliver.
         Each row includes, an img, heading, and paragraph body */}
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={5}

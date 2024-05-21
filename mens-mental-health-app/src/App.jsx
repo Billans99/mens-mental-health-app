@@ -1,8 +1,3 @@
-// TO DO: 
-// Browse Material UI components
-// Work on Home component
-// Add more statistics to database
-
 // imports
 import NavBar from './NavBar.jsx'
 import React, { useEffect, useState } from 'react'
@@ -20,11 +15,11 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 
-// states
-//
-
 
 const App = () => {
+
+// states
+//
 
 
   return (

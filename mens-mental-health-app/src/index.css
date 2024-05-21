@@ -70,3 +70,19 @@
     height: 125px;
     
 }
+
+.statistics-heading-container{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.statistics-heading{
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
