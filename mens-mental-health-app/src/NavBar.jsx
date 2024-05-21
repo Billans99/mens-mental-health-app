@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 // functions
 //
 
-
+// This NavBar component is used for all routes
 const NavBar = () => {
 
     

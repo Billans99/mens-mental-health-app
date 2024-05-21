@@ -28,3 +28,45 @@
     margin-left: 20px;
 }
 
+.welcome-message-container{
+    margin: 40px 0px;
+    text-align: center;
+    
+}
+
+.welcome-message{
+
+}
+
+.home-summary-container{
+    
+}
+
+.home-summary-img1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    
+}
+
+.home-summary-img2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.home-summary-img3{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.home-summary-heading{
+    height: 125px;
+
+}
+
+.home-summary-body{
+    height: 125px;
+    
+}
