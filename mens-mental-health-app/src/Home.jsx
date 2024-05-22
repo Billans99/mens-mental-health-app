@@ -26,8 +26,8 @@ const Home = () => {
         <NavBar />
         {/* Welcome message for home component 
         This home page is mobile and web responsive */}
-        <div className="welcome-message-container">
-            <h1 className="welcome-message">Welcome to the Men's Mental Health App</h1>
+        <div className="app-heading-container">
+            <h1 className="app-heading">Vital Help</h1>
         </div>
 
     {/* Home page summary, using a grid describing the value this app can deliver.
