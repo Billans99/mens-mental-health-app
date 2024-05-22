@@ -46,13 +46,13 @@ const Home = () => {
           </Item>
         </Grid>
         <Grid item xs={4}>
-          <Item><h2 className="home-summary-heading">Targeted support to get you back on your feet</h2></Item>
+          <Item><h2 className="home-summary-heading">Reach out to a professional for targeted support</h2></Item>
         </Grid>
         <Grid item xs={4}>
           <Item>
             <h6 className="home-summary-body">
-                Men and womens' mental health looks different and can appear in different ways. We provide targeted mental health support for men
-                to help them get back on their feet.
+                Reaching out to a professional can be the first step to recovery. They can provide targeted support to help you overcome the challenges
+                you face in your mental health journey.
             </h6>
           </Item>
         </Grid>
@@ -91,7 +91,7 @@ const Home = () => {
         <Grid item xs={4}>
           <Item>
             <h6 className="home-summary-body">
-                Friends and family can be our largest supporters in our recovery of mental health. Make sure to reach out to the pople that care 
+                Having a support network can be vital in our journey to recovery in mental health. Make sure to reach out to the people that care 
                 the most.
             </h6>
           </Item>

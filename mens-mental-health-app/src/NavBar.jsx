@@ -39,11 +39,11 @@ const NavBar = () => {
                     <Nav className="nav-links-container">
                         <Nav.Link as={Link} to="/" className="nav-links">Home</Nav.Link>
                         <Nav.Link as={Link} to="/statistics" className="nav-links">Statistics</Nav.Link>
-                        <Nav.Link as={Link} to="/members" className="nav-links">Members</Nav.Link>
+                        <Nav.Link as={Link} to="/members" className="nav-links invisible">Members</Nav.Link>
                         <Nav.Link as={Link} to="/about" className="nav-links">About</Nav.Link>
-                        <Nav.Link as={Link} to="/contact" className="nav-links">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/contact" className="nav-links invisible">Contact</Nav.Link>
                         <NavDropdown title="Support" id="basic-nav-dropdown" className="nav-dropdown-container">
-                            <NavDropdown.Item as={Link} to="/generalsupport">
+                            <NavDropdown.Item as={Link} to="/generalsupport" className="nav-dropdown-item">
                                 Mental health support links
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
