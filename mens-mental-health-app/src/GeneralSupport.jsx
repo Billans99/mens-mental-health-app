@@ -6,12 +6,13 @@ import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import Button from '@mui/material/Button'
 import * as React from 'react'
+import Link from '@mui/material/Link';
+
 
 const style2 = {
     textAlign: 'center',
     fontWeight: 'bold',
   }
-
 
 const GeneralSupport = () => {
 
@@ -26,7 +27,7 @@ const GeneralSupport = () => {
         <div className="card-container">
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.beyondblue.org.au/" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.beyondblue.org.au/" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -41,12 +42,12 @@ const GeneralSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.lifeline.org.au/" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.lifeline.org.au/" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -61,13 +62,13 @@ const GeneralSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.sane.org/get-support" target="_blank" className="support-links"> 
-                    <CardActionArea onClick={() => handleOpenModal(statistic)}>
+                <Link sx={{ color: "#000000" }} href="https://www.sane.org/get-support" target="_blank" underline="none">
+                    <CardActionArea>
                         <CardMedia
                             component="img"
                             height="140"
@@ -81,12 +82,12 @@ const GeneralSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://headspace.org.au/" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://headspace.org.au/" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -101,7 +102,7 @@ const GeneralSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
         </div>

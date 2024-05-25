@@ -6,11 +6,12 @@ import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import Button from '@mui/material/Button'
 import * as React from 'react'
+import Link from '@mui/material/Link'
 
 const style2 = {
     textAlign: 'center',
     fontWeight: 'bold',
-  }
+}
 
 const CrisisSupport = () => {
 
@@ -25,8 +26,8 @@ const CrisisSupport = () => {
         <div className="card-container">
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.triplezero.gov.au/" target="_blank" className="support-links"> 
-                    <CardActionArea onClick={() => handleOpenModal(statistic)}>
+                <Link sx={{ color: "#000000" }} href="https://www.triplezero.gov.au/" target="_blank" underline="none">
+                    <CardActionArea>
                         <CardMedia
                             component="img"
                             height="140"
@@ -41,12 +42,12 @@ const CrisisSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.lifeline.org.au/" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.lifeline.org.au/" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -62,12 +63,12 @@ const CrisisSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.beyondblue.org.au/get-support/urgent-help" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.beyondblue.org.au/get-support/urgent-help" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -83,12 +84,12 @@ const CrisisSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.suicidecallbackservice.org.au/" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.suicidecallbackservice.org.au/" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -104,12 +105,12 @@ const CrisisSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <a href="https://www.qld.gov.au/health/mental-health/help-lines/1300-mh-call" target="_blank" className="support-links"> 
+                <Link sx={{ color: "#000000" }} href="https://www.qld.gov.au/health/mental-health/help-lines/1300-mh-call" target="_blank" underline="none">
                     <CardActionArea>
                         <CardMedia
                             component="img"
@@ -125,7 +126,7 @@ const CrisisSupport = () => {
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                </a>
+                </Link>
             </Card>
 
         </div>
