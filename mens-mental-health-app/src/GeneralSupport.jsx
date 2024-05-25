@@ -26,78 +26,82 @@ const GeneralSupport = () => {
         <div className="card-container">
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="beyond-blue-logo.png"
-                        alt="Suicide Awareness"
-                    />
-                    <CardContent>
-                        <Typography sx={style2} gutterBottom variant="h5" component="div">
-                            {/* Change this to API data (title prop of schema) */}
-                            Beyond blue
-                            {/* https://www.beyondblue.org.au/ */}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <a href="https://www.beyondblue.org.au/" target="_blank" className="support-links"> 
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            image="beyond-blue-logo.png"
+                            alt="Suicide Awareness"
+                        />
+                        <CardContent>
+                            <Typography sx={style2} gutterBottom variant="h5" component="div">
+                                Beyond blue
+                                {/* https://www.beyondblue.org.au/ */}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </a>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="lifeline-logo.png"
-                        alt="Suicide Awareness"
-                    />
-                    <CardContent>
-                        <Typography sx={style2} gutterBottom variant="h5" component="div">
-                            {/* Change this to API data (title prop of schema) */}
-                            Lifeline
-                            {/* https://www.lifeline.org.au/ */}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <a href="https://www.lifeline.org.au/" target="_blank" className="support-links"> 
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            image="lifeline-logo.png"
+                            alt="Suicide Awareness"
+                        />
+                        <CardContent>
+                            <Typography sx={style2} gutterBottom variant="h5" component="div">
+                                Lifeline
+                                {/* https://www.lifeline.org.au/ */}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </a>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="sane-logo.png"
-                        alt="Suicide Awareness"
-                    />
-                    <CardContent>
-                        <Typography sx={style2} gutterBottom variant="h5" component="div">
-                            {/* Change this to API data (title prop of schema) */}
-                            Sane
-                            {/* https://www.sane.org/get-support */}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <a href="https://www.sane.org/get-support" target="_blank" className="support-links"> 
+                    <CardActionArea onClick={() => handleOpenModal(statistic)}>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            image="sane-logo.png"
+                            alt="Suicide Awareness"
+                        />
+                        <CardContent>
+                            <Typography sx={style2} gutterBottom variant="h5" component="div">
+                                Sane
+                                {/* https://www.sane.org/get-support */}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </a>
             </Card>
 
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
-                <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image="headspace-logo.png"
-                        alt="Suicide Awareness"
-                    />
-                    <CardContent>
-                        <Typography sx={style2} gutterBottom variant="h5" component="div">
-                            {/* Change this to API data (title prop of schema) */}
-                            Headspace
-                            {/* https://headspace.org.au/ */}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
+                <a href="https://headspace.org.au/" target="_blank" className="support-links"> 
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            image="headspace-logo.png"
+                            alt="Suicide Awareness"
+                        />
+                        <CardContent>
+                            <Typography sx={style2} gutterBottom variant="h5" component="div">
+                                Headspace
+                                {/* https://headspace.org.au/ */}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </a>
             </Card>
 
         </div>
