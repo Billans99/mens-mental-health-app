@@ -8,6 +8,7 @@ import Button from '@mui/material/Button'
 import * as React from 'react'
 import Link from '@mui/material/Link'
 
+// style for text in card components
 const style2 = {
     textAlign: 'center',
     fontWeight: 'bold',
@@ -24,6 +25,7 @@ const CrisisSupport = () => {
         <NavBar />
         <h1 className="app-heading">Emergency Links</h1>
         <div className="card-container">
+            {/* sx is material UI prop to style */}
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}
                 <Link sx={{ color: "#000000" }} href="https://www.triplezero.gov.au/" target="_blank" underline="none">

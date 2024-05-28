@@ -8,7 +8,7 @@ import Button from '@mui/material/Button'
 import * as React from 'react'
 import Link from '@mui/material/Link';
 
-
+// style for text in card components
 const style2 = {
     textAlign: 'center',
     fontWeight: 'bold',
@@ -23,7 +23,8 @@ const GeneralSupport = () => {
         <NavBar />
         {/* App heading */}
         <h1 className="app-heading">General Support Links</h1>
-            
+
+        {/* sx is material UI prop to style */}
         <div className="card-container">
             <Card sx={{ maxWidth: 345 }}>
                 {/* On click of the card action area, open modal */}

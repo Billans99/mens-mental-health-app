@@ -43,7 +43,8 @@ const [selectedStatistic, setSelectedStatistic] = useState([])
 const [loading, setLoading] = useState(false)
 
 
-
+    // UseEffect hook to fetch statistics data from API on initial render, or when
+    // dependencies change
     useEffect(() => {
         getStatisticsData()
     }, [])
@@ -93,6 +94,7 @@ const handleCloseModal = () => {
             {statisticsData.map((statistic) => {
                 return (
                     <>
+                    {/* sx is material UI prop to style Card component */}
                     <Card sx={{ maxWidth: 345 }}>
                         {/* On click of the card action area, open modal */}
                         <CardActionArea onClick={() => handleOpenModal(statistic)}>
@@ -111,7 +113,6 @@ const handleCloseModal = () => {
                                     {/* Change this to API data (content prop schema) */}
                                     {statistic.content}
                                 </Typography>
-
                             </CardContent>
                         </CardActionArea>
                     </Card>
