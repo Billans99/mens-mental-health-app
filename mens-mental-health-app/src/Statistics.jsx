@@ -72,11 +72,10 @@ const handleCloseModal = () => {
             const statisticsResponse = await axios.get('http://localhost:3000/statistics')
             console.log(statisticsResponse)
             setStatisticsData(statisticsResponse.data.statistics)
-            setLoading(false)
         } catch (err) {
             console.error(err)
         } finally {
-            
+            setLoading(false)
         }
     }
 
@@ -84,6 +83,7 @@ const handleCloseModal = () => {
     return(
         <>
         <NavBar />
+        
         {/* Statistics component heading */}
         <div className="app-heading-container">
             <h1 className="app-heading">Statistics</h1>

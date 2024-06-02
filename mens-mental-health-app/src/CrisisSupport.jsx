@@ -12,6 +12,7 @@ import Link from '@mui/material/Link'
 const style2 = {
     textAlign: 'center',
     fontWeight: 'bold',
+    minHeight: '60px',
 }
 
 const CrisisSupport = () => {
