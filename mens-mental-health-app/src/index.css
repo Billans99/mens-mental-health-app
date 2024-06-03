@@ -190,6 +190,21 @@
     gap: 20px;
 }
 
+.card-button-container{
+    display: block;
+}
+
+.card-button{
+    display: block;
+    padding: 9px 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.statistics-cards:hover{
+    scale: 1.15;
+}
+
 .about-us-img-container{
     /* border: 1px solid black; */
     margin-bottom: 10px;

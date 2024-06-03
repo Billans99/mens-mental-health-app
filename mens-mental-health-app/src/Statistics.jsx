@@ -5,6 +5,7 @@ import * as React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
@@ -98,27 +99,44 @@ const handleCloseModal = () => {
                     <Card sx={{ 
                         maxWidth: 345,
                         borderRadius: '10px',
+                        }}>
 
-                    }}>
                         {/* On click of the card action area, open modal */}
                         <CardActionArea onClick={() => handleOpenModal(statistic)}>
                             <CardMedia
                                 component="img"
-                                height="140"
+                                height="160"
                                 image="statistic-mens-suicide-rates-2023.png"
                                 alt="Suicide Awareness"
                                 />
+                            </CardActionArea>
                             <CardContent>
-                                <Typography gutterBottom variant="h5" component="div">
+                                <Typography gutterBottom variant="h5" component="div" sx={{
+                                    minHeight: '50px',
+
+                                }}>
                                     {/* Change this to API data (title prop of schema) */}
                                     {statistic.title}
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" sx={{
+                                   
+                                }}>
                                     {/* Change this to API data (content prop schema) */}
                                     {statistic.content}
                                 </Typography>
                             </CardContent>
-                        </CardActionArea>
+                            <CardActions>
+                                <div className="card-button-container">
+                                    <Button className="card-button" size="large" onClick={() => handleOpenModal(statistic)} sx={{
+                                        position: 'static',
+                                        bottom: '100',
+                                        left: '50',
+                                        }}>
+                                        Learn More
+                                    </Button>
+                                </div>
+                            </CardActions>
+                        
                     </Card>
 
                     {/* Modal that displays after a card is clicked */}
