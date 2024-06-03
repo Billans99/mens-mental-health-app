@@ -47,13 +47,12 @@ const Home = () => {
             </Item>
           </Grid>
           <Grid item xs={4}>
-            <Item><h2 className="home-summary-heading">Reach out to a professional for targeted support</h2></Item>
+            <Item><h2 className="home-summary-heading">Reach out to a professional</h2></Item>
           </Grid>
           <Grid item xs={4}>
             <Item>
               <h6 className="home-summary-body">
-                  Reaching out to a professional can be the first step to recovery. They can provide targeted support to help you overcome the challenges
-                  you face in your mental health journey.
+                  Reaching out to a professional can be a great step to recovery.
               </h6>
             </Item>
           </Grid>
@@ -66,14 +65,13 @@ const Home = () => {
           </Grid>
           <Grid item xs={4}>
             <Item>
-            <h2 className="home-summary-heading">Have more insight with statistical data</h2>
+            <h2 className="home-summary-heading">Have more insight</h2>
             </Item>
           </Grid>
           <Grid item xs={4}>
             <Item>
               <h6 className="home-summary-body">
-                  Statistical data can give men a stronger understanding of the problems they face, increasing the chances of recognizing probkems
-                  that arise among themselves, friends and family.
+                  Statistical data can give you a greater understanding of the problems you face.
               </h6>
             </Item>
           </Grid>
@@ -86,14 +84,13 @@ const Home = () => {
           </Grid>
           <Grid item xs={4}>
             <Item>
-              <h2 className="home-summary-heading">External support can can be vital to recovery</h2>
+              <h2 className="home-summary-heading">External support</h2>
             </Item>
           </Grid>
           <Grid item xs={4}>
             <Item>
               <h6 className="home-summary-body">
-                  Having a support network can be vital in our journey to recovery in mental health. Make sure to reach out to the people that care 
-                  the most.
+                  Having a support network can be vital in our journey to recovery in mental health.
               </h6>
             </Item>
           </Grid>

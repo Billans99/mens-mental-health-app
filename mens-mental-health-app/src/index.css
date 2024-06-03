@@ -1,3 +1,8 @@
+:root{
+    --app-heading-bg-color: #f5f5f5;
+
+}
+
 
 /* CSS reset */
 *{
@@ -35,7 +40,8 @@
 .app-heading{
     margin: 40px 0px;
     text-align: center;
-    
+    background-color: var(--app-heading-bg-color);
+    padding: 100px 0px;
 }
 
 .welcome-message{
@@ -43,7 +49,10 @@
 }
 
 .home-summary-container{
-   
+   height: 100vh;
+   width: 50vw;
+   margin: 0 auto;
+   border: 1px solid black;
 }
 
 .home-summary-img{
