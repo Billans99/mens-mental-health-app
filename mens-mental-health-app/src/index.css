@@ -8,6 +8,8 @@
 }
 
 
+
+
 /* CSS reset */
 *{
     margin: 0;
@@ -62,6 +64,11 @@
     max-width: 200px;
     border-radius: 50%;
     background-color: var(--app-main-accent-color);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .home-summary-img:hover{
