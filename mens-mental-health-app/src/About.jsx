@@ -9,8 +9,14 @@ const About = () => {
     return(
         <>
         <NavBar />
+
+
         <h1 className="app-heading">About Us</h1>
-        
+
+        <div className="about-us-img-container">
+            <img className="about-us-img" src="/about-us-image.png"></img>
+        </div>
+
         <div className="about-body">
             <h3 className="about-heading">Vital Help</h3>
             <p>

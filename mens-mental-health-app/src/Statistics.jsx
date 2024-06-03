@@ -95,7 +95,11 @@ const handleCloseModal = () => {
                 return (
                     <>
                     {/* sx is material UI prop to style Card component */}
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ 
+                        maxWidth: 345,
+                        borderRadius: '10px',
+
+                    }}>
                         {/* On click of the card action area, open modal */}
                         <CardActionArea onClick={() => handleOpenModal(statistic)}>
                             <CardMedia
