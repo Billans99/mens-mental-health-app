@@ -99,6 +99,9 @@ const handleCloseModal = () => {
                     <Card sx={{ 
                         maxWidth: 345,
                         borderRadius: '10px',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        flexDirection: 'column',
                         }}>
 
                         {/* On click of the card action area, open modal */}
@@ -108,12 +111,13 @@ const handleCloseModal = () => {
                                 height="160"
                                 image="statistic-mens-suicide-rates-2023.png"
                                 alt="Suicide Awareness"
+                                
                                 />
                             </CardActionArea>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" sx={{
                                     minHeight: '50px',
-
+                                    
                                 }}>
                                     {/* Change this to API data (title prop of schema) */}
                                     {statistic.title}

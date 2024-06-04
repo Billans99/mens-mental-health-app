@@ -172,7 +172,9 @@ const Home = () => {
           </div>
 
           {/* Code the other piece of content you want here */}
-          <p>Hello! testing</p>
+          <div className="mission-statement-container">
+                Hello
+          </div>
         </div>
     
     
