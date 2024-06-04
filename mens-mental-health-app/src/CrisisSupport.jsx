@@ -24,7 +24,10 @@ const CrisisSupport = () => {
     return(
         <>
         <NavBar />
-        <h1 className="app-heading">Emergency Links</h1>
+        <div className="app-heading-container">
+            <h1 className="app-heading">Emergency Links</h1>
+        </div>
+        
         <div className="card-container">
             {/* sx is material UI prop to style */}
             <Card sx={{ maxWidth: 345 }}>

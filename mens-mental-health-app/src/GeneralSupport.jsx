@@ -23,7 +23,9 @@ const GeneralSupport = () => {
         <>
         <NavBar />
         {/* App heading */}
-        <h1 className="app-heading">General Support Links</h1>
+        <div className="app-heading-container">
+            <h1 className="app-heading">General Support Links</h1>
+        </div>
 
         {/* sx is material UI prop to style */}
         <div className="card-container">
