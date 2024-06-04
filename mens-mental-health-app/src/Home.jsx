@@ -73,20 +73,20 @@ const Home = () => {
           }}
         >
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <img className="home-summary-img" src="/home-summary-img1.png"></img>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
             
           }}>
             <h2 className="home-summary-heading">Reach out to a professional</h2>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
             marginBottom: '100px',
           }}>
@@ -110,19 +110,19 @@ const Home = () => {
           }}
         >
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <img className="home-summary-img" src="/home-summary-img2.png"></img>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <h2 className="home-summary-heading">Have more insight</h2>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
             marginBottom: '100px',
           }}>
@@ -146,19 +146,19 @@ const Home = () => {
           }}
         >
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <img className="home-summary-img" src="/home-summary-img3.png"></img>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <h2 className="home-summary-heading">External support</h2>
           </Item>
           <Item sx={{
-            bgcolor: '#e0efff',
+            bgcolor: 'paper',
             border: 'none',
           }}>
             <h6 className="home-summary-body">
