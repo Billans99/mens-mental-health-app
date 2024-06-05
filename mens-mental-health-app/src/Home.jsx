@@ -211,10 +211,8 @@ const Home = () => {
                   sx={{
                     marginRight: '15px',
                     alignSelf: 'flex-end',
-                    boxShadow: '1px 1px 1px 1px grey',
                     '&:hover': {
                       backgroundColor: 'green',
-                      scale: '1.01',
                     },
                     }}>
                       View Tests
@@ -223,6 +221,7 @@ const Home = () => {
               </div>
 
               {/* Mental health statistics goes here */}
+              
 
               {/* Useful links for support */}
 

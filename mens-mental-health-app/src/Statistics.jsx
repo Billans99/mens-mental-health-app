@@ -102,28 +102,21 @@ const handleCloseModal = () => {
                         display: 'flex',
                         justifyContent: 'space-between',
                         flexDirection: 'column',
-                        }}>
+                        bgcolor: '#e0efff',
+                        boxShadow: '1px 1px 2px 2px white',
 
-                        {/* On click of the card action area, open modal */}
-                        <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                            {/* <CardMedia
-                                component="img"
-                                height="160"
-                                image="statistic-mens-suicide-rates-2023.png"
-                                alt="Suicide Awareness"
-                                
-                                /> */}
-                            </CardActionArea>
+                        }}>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" sx={{
                                     minHeight: '50px',
+                                    color: 'black',
                                     
                                 }}>
                                     {/* Change this to API data (title prop of schema) */}
                                     {statistic.title}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary" sx={{
-                                   
+                                   color: 'black',
                                 }}>
                                     {/* Change this to API data (content prop schema) */}
                                     {statistic.content}
@@ -131,10 +124,16 @@ const handleCloseModal = () => {
                             </CardContent>
                             <CardActions>
                                 <div className="card-button-container">
-                                    <Button className="card-button" size="large" onClick={() => handleOpenModal(statistic)} sx={{
+                                    <Button className="card-button" variant="contained" size="small" onClick={() => handleOpenModal(statistic)} sx={{
                                         position: 'static',
                                         bottom: '100',
                                         left: '50',
+                                        borderRadius: '7px',
+                                        // color: 'white',
+                                        '&:hover': {
+                                            color: 'white',
+                                            backgroundColor: 'green',
+                                        }
                                         }}>
                                         Learn More
                                     </Button>
