@@ -29,7 +29,14 @@ const GeneralSupport = () => {
 
         {/* sx is material UI prop to style */}
         <div className="card-container">
-            <Card sx={{ maxWidth: 345 }}>
+
+            <Card sx={{ 
+            maxWidth: 345, 
+            height: 140,
+            '&:hover': {
+                transform: 'translateY(-5px)',
+            }
+            }}>
                 {/* On click of the card action area, open modal */}
                 <Link sx={{ color: "#000000" }} href="https://www.beyondblue.org.au/" target="_blank" underline="none">
                     <CardActionArea>
@@ -41,7 +48,7 @@ const GeneralSupport = () => {
                         />
                         <CardContent>
                             <Typography sx={style2} gutterBottom variant="h5" component="div">
-                                Beyond blue
+                                {/* Beyond blue */}
                                 {/* https://www.beyondblue.org.au/ */}
                             </Typography>
                         </CardContent>
@@ -49,7 +56,13 @@ const GeneralSupport = () => {
                 </Link>
             </Card>
 
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ 
+                maxWidth: 345, 
+                height: 140,
+                '&:hover': {
+                    transform: 'translateY(-5px)',
+                }
+                }}>
                 {/* On click of the card action area, open modal */}
                 <Link sx={{ color: "#000000" }} href="https://www.lifeline.org.au/" target="_blank" underline="none">
                     <CardActionArea>
@@ -61,7 +74,7 @@ const GeneralSupport = () => {
                         />
                         <CardContent>
                             <Typography sx={style2} gutterBottom variant="h5" component="div">
-                                Lifeline
+                                {/* Lifeline */}
                                 {/* https://www.lifeline.org.au/ */}
                             </Typography>
                         </CardContent>
@@ -69,7 +82,13 @@ const GeneralSupport = () => {
                 </Link>
             </Card>
 
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ 
+                maxWidth: 345, 
+                height: 140,
+                '&:hover': {
+                    transform: 'translateY(-5px)',
+                }
+                }}>
                 {/* On click of the card action area, open modal */}
                 <Link sx={{ color: "#000000" }} href="https://www.sane.org/get-support" target="_blank" underline="none">
                     <CardActionArea>
@@ -81,7 +100,7 @@ const GeneralSupport = () => {
                         />
                         <CardContent>
                             <Typography sx={style2} gutterBottom variant="h5" component="div">
-                                Sane
+                                {/* Sane */}
                                 {/* https://www.sane.org/get-support */}
                             </Typography>
                         </CardContent>
@@ -89,7 +108,13 @@ const GeneralSupport = () => {
                 </Link>
             </Card>
 
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ 
+                maxWidth: 345, 
+                height: 140,
+                '&:hover': {
+                    transform: 'translateY(-5px)',
+                }
+                }}>
                 {/* On click of the card action area, open modal */}
                 <Link sx={{ color: "#000000" }} href="https://headspace.org.au/" target="_blank" underline="none">
                     <CardActionArea>
@@ -101,7 +126,7 @@ const GeneralSupport = () => {
                         />
                         <CardContent>
                             <Typography sx={style2} gutterBottom variant="h5" component="div">
-                                Headspace
+                                {/* Headspace */}
                                 {/* https://headspace.org.au/ */}
                             </Typography>
                         </CardContent>
