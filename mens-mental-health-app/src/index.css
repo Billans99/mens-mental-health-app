@@ -17,6 +17,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Slab", serif;
+    
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--app-body-bg-color), var(--app-gradient-secondary-color));
 }
 
 .invisible{
@@ -90,7 +98,7 @@
     text-align: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid var(--app-main-accent-color);
+    border: 0.5px solid #afacb8;
 }
 
 .mission-statement-heading{
@@ -229,11 +237,6 @@
       100% {
           background-size: 650%;
       }
-  }
-
-  body {
-    /* background-color: var(--app-body-bg-color); */
-    background: linear-gradient(180deg, var(--app-body-bg-color), var(--app-gradient-secondary-color));
   }
   
   header {

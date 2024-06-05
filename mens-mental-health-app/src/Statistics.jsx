@@ -106,13 +106,13 @@ const handleCloseModal = () => {
 
                         {/* On click of the card action area, open modal */}
                         <CardActionArea onClick={() => handleOpenModal(statistic)}>
-                            <CardMedia
+                            {/* <CardMedia
                                 component="img"
                                 height="160"
                                 image="statistic-mens-suicide-rates-2023.png"
                                 alt="Suicide Awareness"
                                 
-                                />
+                                /> */}
                             </CardActionArea>
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div" sx={{
