@@ -74,29 +74,33 @@ const Home = () => {
                     alignItems: 'center',
                   }}
                 >
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
                   }}>
                     <img className="home-summary-img" src="/home-summary-img1.png"></img>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h2 className="home-summary-heading">Reach out to a professional</h2>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
                     marginBottom: '100px',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h6 className="home-summary-body">
                           Reaching out to a professional can be a great step to recovery.
                     </h6>
                   </Item>
+
               </Box>
 
               <Box
@@ -111,29 +115,33 @@ const Home = () => {
                     alignItems: 'center',
                   }}
                 >
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
                   }}>
                     <img className="home-summary-img" src="/home-summary-img2.png"></img>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h2 className="home-summary-heading">Have more insight</h2>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
                     marginBottom: '100px',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h6 className="home-summary-body">
                           Statistical data can give you a greater understanding of the problems you face.
                     </h6>
                   </Item>
+
               </Box>
 
               <Box
@@ -148,28 +156,32 @@ const Home = () => {
                     alignItems: 'center',
                   }}
                 >
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
                   }}>
                     <img className="home-summary-img" src="/home-summary-img3.png"></img>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h2 className="home-summary-heading">External support</h2>
                   </Item>
+
                   <Item sx={{
                     bgcolor: 'paper',
                     border: 'none',
-                    color: '#e6e6e6',
+                    color: '#e0efff',
                   }}>
                     <h6 className="home-summary-body">
                           Having a support network can be vital in our journey to recovery in mental health.
                     </h6>
                   </Item>
+
               </Box>
             </div>
           
@@ -196,7 +208,7 @@ const Home = () => {
                 </p>
 
                 <div className="test-flex-container">
-                  <ul className="test-list">Clinical Partners online mental health tests include:
+                  <ul>Clinical Partners online mental health tests include:
                     <li>ADHD</li>
                     <li>Anxiety</li>
                     <li>Bipolar</li>
@@ -221,7 +233,34 @@ const Home = () => {
               </div>
 
               {/* Mental health statistics goes here */}
-              
+              <div className="home-statistics-container">
+                <h2 className="home-statistics-heading">
+                  Learn more about mental health statistics
+                </h2>
+
+                <p className="home-statistics-heading2">
+                  Understanding mental health statistics can give you a greater insight into the problems you face.
+                </p>
+
+                <div className="home-statistics-body-container">
+                  <p className="home-statistics-body">Learning about mental health statistics can significantly enhance our understanding of the challenges individuals may encounter. These statistics provide a quantitative perspective on the prevalence and impact of various mental health conditions, highlighting the scope and scale of these issues within different populations. By examining data on mental health, we can identify patterns, risk factors, and demographic disparities, which can inform more effective interventions and support systems. Additionally, such knowledge fosters empathy and awareness, reducing stigma and promoting a more informed and compassionate approach to mental health in our communities. Understanding the numbers behind mental health struggles underscores the importance of accessible care and the need for proactive measures to address these pervasive issues.
+                    
+                  </p>
+
+                  <Button href="/Statistics" variant="contained"
+                  sx={{
+                    marginRight: '15px',
+                    alignSelf: 'flex-end',
+                    marginTop: '20px',
+                    '&:hover': {
+                      backgroundColor: 'green',
+                    },
+                    }}>
+                      View Statistics
+                  </Button>
+                </div>
+              </div>
+
 
               {/* Useful links for support */}
 

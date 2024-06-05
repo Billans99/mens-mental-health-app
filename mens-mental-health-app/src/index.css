@@ -134,6 +134,34 @@ html, body {
     text-align: left;
 }
 
+.home-statistics-container{
+    
+    margin-top: -40px;
+}
+
+.home-statistics-heading{
+    color: var(--app-main-accent-color);
+}
+
+.home-statistics-heading2{
+    margin-top: 30px;
+}
+
+.home-statistics-body-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.home-statistics-body{
+    width: 100%;
+    
+}
+
+
 /* 
 .test-btn{
     margin-right: 16px;
