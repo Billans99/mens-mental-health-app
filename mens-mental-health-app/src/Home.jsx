@@ -237,6 +237,7 @@ const Home = () => {
                     marginRight: '15px',
                     alignSelf: 'flex-end',
                     marginTop: '20px',
+                    marginBottom: '15px',
                     '&:hover': {
                       backgroundColor: 'green',
                     },
@@ -248,7 +249,35 @@ const Home = () => {
 
 
               {/* Useful links for support */}
+              <div className="home-external-help-container">
+                <h2 className="home-external-help-heading">
+                  Talk to a counsellor at Beyond Blue
+                </h2>
 
+                <p>
+                  Beyond Blue offers a range of services to support individuals experiencing mental health challenges. These services include counselling, online forums, and resources to help individuals manage their mental health and well-being.
+                </p>
+
+                <img className="home-external-help-image" src="beyond-blue-logo.png"></img>
+
+                <div className="test-flex-container">
+                  <ul>
+                    Beyond Blue offer free couselling via phone or online chat.
+                  </ul>
+
+                  <Button href="https://www.beyondblue.org.au/get-support/talk-to-a-counsellor" variant="contained" target="_blank" 
+                  sx={{
+                    marginRight: '15px',
+                    alignSelf: 'flex-end',
+                    marginTop: '15px',
+                    '&:hover': {
+                      backgroundColor: 'green',
+                    },
+                    }}>
+                      View counselling
+                  </Button>
+                </div>
+              </div>
             </div>
           
           

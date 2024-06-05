@@ -105,8 +105,7 @@ const handleCloseModal = () => {
                         bgcolor: '#e0efff',
                         boxShadow: '1px 1px 2px 2px white',
                         '&:hover': {
-                            'bgcolor': '#f5f5f5',
-                            transform: 'translateY(-5px)',
+                            'bgcolor': '#f5f5f5',                          
                         }
                         
 
