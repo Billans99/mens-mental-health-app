@@ -100,13 +100,13 @@
 }
 
 .mission-statement{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .test-container{
     background-color: #e0efff;
     width: 100%;
-    height: 400px;
+    height: 425px;
     border: 1px solid #cccccc;
     color: var(--app-main-accent-color);
     margin-bottom: 50px;
@@ -120,21 +120,19 @@
 .test-flex-container{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     margin: 50px 0px;
     align-items: center;
     text-align: left;
 }
 
-.test-container > .test-flex-container > {
-  
-}
-
+/* 
 .test-btn{
-    margin-right: 50px;
+    margin-right: 16px;
     padding: 10px 20px;
     height: 50px;
-    border-radius: 10px;
-}
+    border-radius: 20px;
+} */
 
 .home-summary-img{
     height: 200px;

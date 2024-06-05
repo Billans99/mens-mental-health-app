@@ -7,6 +7,7 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
 import PropTypes from 'prop-types'
+import Button from '@mui/material/Button';
 
 // Styled components
 // const Item = styled(Paper)(({ theme }) => ({
@@ -206,9 +207,18 @@ const Home = () => {
                     <li>Stress</li>
                   </ul>
 
-                  <button className="test-btn">
-                    View tests
-                  </button>
+                  <Button href="https://www.clinical-partners.co.uk/online-tests" variant="contained" target="_blank" 
+                  sx={{
+                    marginRight: '15px',
+                    alignSelf: 'flex-end',
+                    boxShadow: '1px 1px 1px 1px grey',
+                    '&:hover': {
+                      backgroundColor: 'green',
+                      scale: '1.01',
+                    },
+                    }}>
+                      View Tests
+                  </Button>
                 </div>
               </div>
 
