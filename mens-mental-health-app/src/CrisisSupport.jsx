@@ -24,9 +24,9 @@ const CrisisSupport = () => {
     return(
         <>
         <NavBar />
-        <div className="app-heading-container">
+        {/* <div className="app-heading-container">
             <h1 className="app-heading">Emergency Links</h1>
-        </div>
+        </div> */}
         
         <div className="card-container">
             {/* sx is material UI prop to style */}

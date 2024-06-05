@@ -86,9 +86,9 @@ const handleCloseModal = () => {
         <NavBar />
         
         {/* Statistics component heading */}
-        <div className="app-heading-container">
+        {/* <div className="app-heading-container">
             <h1 className="app-heading">Statistics</h1>
-        </div>
+        </div> */}
 
         {/* Statistics inside MUI card components */}
         <div className="card-container">

@@ -10,9 +10,9 @@ const About = () => {
         <>
         <NavBar />
 
-        <div className="app-heading-container">
+        {/* <div className="app-heading-container">
             <h1 className="app-heading">About Us</h1>
-        </div>
+        </div> */}
 
         <div className="about-us-img-container">
             <img className="about-us-img" src="/about-us-image.png"></img>
