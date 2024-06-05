@@ -104,6 +104,11 @@ const handleCloseModal = () => {
                         flexDirection: 'column',
                         bgcolor: '#e0efff',
                         boxShadow: '1px 1px 2px 2px white',
+                        '&:hover': {
+                            'bgcolor': '#f5f5f5',
+                            transform: 'translateY(-5px)',
+                        }
+                        
 
                         }}>
                             <CardContent>
@@ -129,13 +134,12 @@ const handleCloseModal = () => {
                                         bottom: '100',
                                         left: '50',
                                         borderRadius: '7px',
-                                        // color: 'white',
                                         '&:hover': {
                                             color: 'white',
                                             backgroundColor: 'green',
                                         }
                                         }}>
-                                        Learn More
+                                            Learn More
                                     </Button>
                                 </div>
                             </CardActions>

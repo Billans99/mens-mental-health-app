@@ -158,8 +158,11 @@ html, body {
 
 .home-statistics-body{
     width: 100%;
-    
 }
+
+.home-statistics-body > li{
+    margin-bottom: 20px;
+} 
 
 
 /* 

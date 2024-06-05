@@ -9,16 +9,6 @@ import Grid from '@mui/material/Grid'
 import PropTypes from 'prop-types'
 import Button from '@mui/material/Button';
 
-// Styled components
-// const Item = styled(Paper)(({ theme }) => ({
-//     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-//     ...theme.typography.body2,
-//     padding: theme.spacing(3),
-//     textAlign: 'center',
-//     color: theme.palette.text.secondary,
-//     boxShadow: "none",
-//   }));
-
 const Item = (props) => {
   const { sx, ...other } = props;
   return (
@@ -51,12 +41,6 @@ const Home = () => {
     return(
         <>
         <NavBar />
-        {/* Welcome message for home component 
-        This home page is mobile and web responsive */}
-        {/* <div className="app-heading-container">
-            <h1 className="app-heading">Vital Help</h1>
-        </div> */}
-
     
         <div className="home-flex-container">
 
@@ -243,9 +227,10 @@ const Home = () => {
                 </p>
 
                 <div className="home-statistics-body-container">
-                  <p className="home-statistics-body">Learning about mental health statistics can significantly enhance our understanding of the challenges individuals may encounter. These statistics provide a quantitative perspective on the prevalence and impact of various mental health conditions, highlighting the scope and scale of these issues within different populations. By examining data on mental health, we can identify patterns, risk factors, and demographic disparities, which can inform more effective interventions and support systems. Additionally, such knowledge fosters empathy and awareness, reducing stigma and promoting a more informed and compassionate approach to mental health in our communities. Understanding the numbers behind mental health struggles underscores the importance of accessible care and the need for proactive measures to address these pervasive issues.
-                    
-                  </p>
+                  <ul className="home-statistics-body">
+                    <li>Learning about mental health statistics can significantly enhance our understanding of the challenges individuals may encounter. These statistics provide a quantitative perspective on the prevalence and impact of various mental health conditions, highlighting the scope and scale of these issues within different populations. By examining data on mental health, we can identify patterns, risk factors, and demographic disparities, which can inform more effective interventions and support systems.</li>
+                    <li>Additionally, such knowledge fosters empathy and awareness, reducing stigma and promoting a more informed and compassionate approach to mental health in our communities. Understanding the numbers behind mental health struggles underscores the importance of accessible care and the need for proactive measures to address these pervasive issues.</li>
+                  </ul>
 
                   <Button href="/Statistics" variant="contained"
                   sx={{
